@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bugema University</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 2px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    .activity-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .activity {
+      width: 100%; /* Full width on small screens */
+      padding: 10px;
+      margin-bottom: 20px; /* Spacing between activities */
+      background-color: #fff;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .photos img {
+      width: 48%; /* Two images per row on small screens */
+      margin: 1%; /* Spacing between images */
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #555;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #777;
+    }
+
+    @keyframes moveLeftToRight {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+    .moving-text {
+      animation: moveLeftToRight 10s linear infinite;
+    }
+
+    /* Media queries for responsiveness */
+    @media (min-width: 768px) {
+      .activity {
+        width: 48%; /* Two activities per row on medium screens */
+        margin: 1%; /* Spacing between activities */
+      }
+    }
+
+    @media (min-width: 992px) {
+      .activity {
+        width: 30%; /* Three activities per row on large screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="col-10">
+        <h1>Bugema <img src="images/log.png" alt="" width="70" height="70"> University</h1>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Gallery</a>
+</nav>
+
+  <section id="activities">
+    <div class="container">
+    <h2 class="moving-text">Activities At Bugema Main Campus</h2>
+      <div class="activity-row">
+        <div class="activity">
+          <h3>Sports</h3>
+          <p>Sports activities are an integral part of campus life, promoting physical fitness and teamwork.</p>
+          <div class="photos">
+            <img src="images/f1.jpeg" alt=""width="300" height="150">
+            <img src="images/f2.jpeg" alt=""width="300" height="150">
+            <img src="images/f3.jpeg" alt=""width="300" height="150">
+            <img src="images/f4.jpeg" alt=""width="300" height="150">
+            <img src="images/f5.jpeg" alt=""width="300" height="150">
+            <img src="images/f6.jpeg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Graduations</h3>
+          <p>Celebrate the academic achievements of students as they graduate and embark on new journeys.</p>
+          <div class="photos graduations">
+            <img src="images/g1.jpeg" alt=""width="300" height="150">
+            <img src="images/g2.jpeg" alt=""width="300" height="150">
+            <img src="images/g3.jpeg" alt=""width="300" height="150">
+            <img src="images/g4.jpeg" alt=""width="300" height="150">
+            <img src="images/g5.jpeg" alt=""width="300" height="150">
+            <img src="images/g6.jpeg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Gospel</h3>
+          <p>Explore spirituality and faith through gospel events that foster a sense of community and fellowship.</p>
+          <!-- Photos for Gospel -->
+          <div class="photos gospel">
+            <img src="images/s.jpeg" alt=""width="300" height="150">
+            <img src="images/go.jpg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Tour</h3>
+          <p>Embark on educational tours to explore new places, cultures, and broaden your horizons.</p>
+          <!-- Photos for Tour -->
+          <div class="photos tour">
+            <img src="images/to.jpg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Outreach</h3>
+          <p>Participate in outreach programs to support marginalized communities and address social issues.</p>
+          <!-- Photos for Outreach -->
+        </div>
+        <div class="activity">
+          <h3>Career Fair</h3>
+          <p>Connect with potential employers and explore career opportunities through interactive career fairs.</p>
+          <!-- Photos for Career Fair -->
+        </div>
+        <div class="activity">
+          <h3>Talent Show</h3>
+          <p>Showcase your talents and creativity in talent shows that celebrate diversity and individuality.</p>
+          <div class="photos talent">
+            <img src="images/d1.jpeg" alt=""width="300" height="150">
+            <img src="images/d2.jpeg" alt=""width="300" height="150">
+            <img src="images/d7.jpeg" alt=""width="300" height="150">
+            <img src="images/d4.jpeg" alt=""width="300" height="150">
+            <img src="images/d5.jpeg" alt=""width="300" height="150">
+            <img src="images/d6.jpeg" alt=""width="300" height="150">
+            <img src="images/d8.jpeg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Health Fair</h3>
+          <p>Promote health and wellness through health fairs offering screenings, workshops, and resources.</p>
+          <!-- Photos for Health Fair -->
+          <div class="photos gospel">
+            <img src="images/h.jpg" alt=""width="300" height="150">
+            <img src="images/h1.jpg" alt=""width="300" height="150">
+            <img src="images/h2.jpg" alt=""width="300" height="150">
+          </div>
+        </div>
+        <div class="activity">
+          <h3>Leadership</h3>
+          <p>Develop leadership skills and empower others through leadership development programs and workshops.</p>
+          <!-- Photos for Leadership -->
+        </div>
+        <div class="activity">
+          <h3>Art Exhibition</h3>
+          <p>Appreciate creativity and expression through art exhibitions showcasing diverse artistic talents.</p>
+          <!-- Photos for Art Exhibition -->
+          <div class="photos tour">
+            <img src="images/z.jpg" alt=""width="300" height="150">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Bugema University.</p>
+    </div>
+  </footer>
+  <br><br><br>
+  <script>
+    var slideshows = document.querySelectorAll('.photos');
+
+    slideshows.forEach(function(slideshow) {
+      var currentIndex = 0;
+      var slides = slideshow.querySelectorAll('img');
+
+      function showSlide(index) {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slides[index].style.display = 'block';
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      setInterval(nextSlide, 2000); // Change slide every 2 seconds
+    });
+  </script>
+</body>
+</html>
